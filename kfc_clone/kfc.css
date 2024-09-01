@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container
+{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.navbar
+{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.location
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    /* background-color: yellowgreen; */
+}
+.loc{
+    width: auto;
+    height: 30%;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.loc img{margin-right: 10px;}
+.loc .locdesc{margin-right: 10px; letter-spacing: 1px;}
+.locbtn button
+{
+    height: 30px;
+    width: 100px;
+    border:none;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 12px;
+}
+.actual_nav
+{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.llinks
+{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.llinks img{
+    margin-left: 130px;
+}
+.llinks span{ 
+    margin-left: 43px; 
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: bold;}
+.rlink
+{
+    width: 26%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign_in
+{
+    width: 25%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(206, 205, 205);
+    font-weight: bold;
+    font-size: 14px;
+}
+.sign_in img{
+    margin-right: 10px;
+}
+.cart{
+    width: auto;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.cart img{
+    width: 60px;
+    height: 60px;
+}
+.cart-count
+{
+    position: absolute;
+    left: 57%;
+    top: 39px;
+}
+.main
+{
+    padding-top: 150px;
+    width: 100%;
+    height: auto;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+.banner
+{
+    width: 100%;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+}
+.content
+{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+.order button{
+    width: 165px;
+    height: 42px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(228, 13, 43);
+    font-size: 14px;
+}
+.order
+{
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.image
+{
+    display: flex;
+    justify-content: center; align-items: center;
+}
+.categories
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.browse
+{
+    width: 80%;
+    height: 100%;
+    /* background-color: coral; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+}
+.title
+{
+    width: 100%;
+    height: 17%;
+    display: flex;
+    /* background-color: aqua; */
+}
+.heading
+{
+    width: 22.5%;
+    height: 100%;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+.heading h4
+{
+    margin-top: 100px;
+}
+.line
+{
+    width: 70%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+.line div
+{
+    margin-top: 110px;
+    width: 100%;
+    height: 35%;
+    /* background-color: yellow; */
+    border-top: 2px solid rgb(196, 196, 196);
+}
+.title a
+{
+    width: 100px;
+    height: 100px;
+    /* background-color: aqua; */
+}
+.menu-cards
+{
+    border-radius: 10px;
+    width: 310px;
+    height: 290px;
+    /* background-color: aqua; */
+    margin-right: 40px;
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fimg
+{
+    width: 100%;
+    height: 70%;
+    /* background-color: brown; */
+}
+.fimg img{
+    width: 310px;
+    height: 202.5px;
+}
+.name
+{
+    width:  100%;
+    height: 30%;
+    font-family: "New Amsterdam", sans-serif;
+    background-color: rgb(248, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.footer
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(32, 33, 36);
+    display: flex;
+    flex-direction: column;
+}
+.upper
+{
+    width: 100%;
+    height: 90vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+}
+.leftbtn
+{
+    width:13.5%;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+.lbtn
+{
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255,255,255,20%);
+    border-radius: 50%;
+    margin-left: 140px;
+    margin-top: 370px;
+}
+.offers
+{
+    width: 86.5%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+}
+.svg
+{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-items: flex-start;
+}
+.rect
+{
+    width: 17px;
+    height: 45px;
+    background-color: rgb(228, 13, 43);
+    margin-right: 15px;
+}
+#fr{
+    margin-left: 20px;
+}
+.offertitle
+{
+    width: 100%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.offertitle :nth-child(1)
+{
+    width: 25%;
+    height: 100%;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+}
+.offertitle :nth-child(2)
+{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+.offerlist
+{
+    width: 100%;
+    height: 621.55px;
+    /* background-color: cadetblue; */
+    display: flex;
+    flex-direction: column;
+}
+.posters
+{
+    width: 100%;
+    height:500px;
+    /* background-color: violet; */
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 30px;
+    margin-top: 30px;
+}
+.posters::-webkit-scrollbar{width:0;}
+.poster{
+    width: 310px;
+    height: 398px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.fimg
+{
+    width: 100%;
+    height: 234.81px;
+    background-color: steelblue;
+    background-size: conver;
+}
+.fimg img{ height: 234.81px;}
+.fooddetail
+{
+    width: 100%;
+    height: 163.19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 247, 245);
+}
+.desc{
+    width: 100%;
+    height: 27%;
+    /* background-color: aqua; */
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(228, 13, 43);
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 32px;
+}
+.offerdesc{
+    width: 90%;
+    height: 25%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(53, 52, 52);
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    /* background-color: yellowgreen; */
+}
+.offdetails
+{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: violet; */
+}
+.offdetails a{
+    color: black;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+.offdetails button{
+    width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.level
+{
+    width: 100%;
+    height: 121.55px;
+    /* background-color: #494949; */
+}
+.holder{
+    width: 80%;
+    height: 3px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+}
+.indicator
+{
+    width: 130px;
+    height: 4px;
+    background-color: white;
+}
+.lower
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.links
+{
+    width: 85%;
+    height: 70%;
+    /* background-color: tomato; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.buclogo
+{
+    width:auto;
+    height:100%;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: springgreen; */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.helpdetails
+{
+    width: 47%;
+    height: 100%;
+    /* background-color: wheat; */
+    margin-right: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content:space-evenly;
+}
+.helpdetails .options
+{
+    width: auto;
+    height: 100%;
+}
+.options p{
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.findkfc
+{
+    width: 17%;
+    height: 100%;
+    /* background-color: turquoise; */
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-evenly; */
+}
+.findkfc img{
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+}
+.findkfc a{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-right: 80px;
+    color: white;
+}
+.appstore
+{
+    width: 20%;
+    height: 100%;
+    /* background-color: teal; */
+}
+.appstore :nth-child(1)
+{
+    margin-right: 25px;
+}
+.copyright
+{
+    width: 85%;
+    height: 15%;
+    /* background-color:violet; */
+}
+.foot
+{
+    width: 100%;
+    height: 80%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+}
+.foot :nth-child(1)
+{
+    width: 7%;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+.foot :nth-child(2)
+{
+    width: 50%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.foot :nth-child(3)
+{
+    width: 10%;
+    height: 100%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.foot :nth-child(3) img{
+    width: 35px;
+    height: 35px;
+}
