@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    series6(5,3);
+	}
+	static void series6(int n, int x)
+	{
+	    float sum = 1;
+	    for(int i=1;i<n;i++)
+	    {
+	        sum = sum + (float)(Math.pow(x,i)/(double)fact(i));
+	    }
+	    System.out.println("The sum is: "+sum);
+	}
+	static int fact(int n){
+	    if(n==1)
+	        return 1;
+	    return n*fact(n-1);
+	}
+}

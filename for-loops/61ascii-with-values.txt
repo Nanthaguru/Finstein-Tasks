@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+        asciiWithValues((char)65,(char)75);
+	}
+	static void asciiWithValues(char s_ch, char e_ch)
+	{
+	    for(char c=s_ch; c<=e_ch;c++)
+	        System.out.println((int)c+"--->"+c);
+	}
+}

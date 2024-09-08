@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args) {
+        firstAndLastDigit(5679);
+	}
+	static void firstAndLastDigit(int n)
+	{
+	    int last = n%10;
+	    n = n/10;
+	    for(;n>9;)
+	        n=n/10;
+	    System.out.println("First Digit: "+n+", Last Digit: "+last);
+	}
+}

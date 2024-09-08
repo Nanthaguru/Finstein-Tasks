@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    series2();
+	}
+	static void series2()
+	{
+	    Scanner s = new Scanner(System.in);
+	    System.out.print("Input the value for the nth term: ");
+	    int n = s.nextInt();
+	    int sum = 0;
+	    for(int i=1;i<=n;i++)
+	    {
+	        sum = sum +(i*i);
+	        System.out.println(i+"*"+i+" = "+i*i);
+	    }
+	    System.out.println("The sum of the above series is: "+sum);
+	}
+}

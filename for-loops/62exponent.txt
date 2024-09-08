@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+        exponent(2,5);
+	}
+	static void exponent(int base, int exp){
+	    int val = 1;
+	    for(int i=1;i<=exp;i++)
+	        val = val * base;
+	    System.out.println(base+" ^ "+exp+" = "+val);
+	}
+}

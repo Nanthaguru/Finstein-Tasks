@@ -1,0 +1,25 @@
+public class Main
+{
+	public static void main(String[] args) {
+	//Right Angled Pascal's Triangle
+        pattern12(7);
+	}
+	static void pattern12(int rows){
+	    int a[][] = new int[rows][rows];
+	    for(int i=0;i<rows;i++)
+	    {
+	        for(int j=0;j<=i;j++)
+	        {
+	            if(j==0 || i==j)
+	                a[i][j] = 1;
+	            else
+	                a[i][j] = a[i-1][j] + a[i-1][j-1];
+	        }
+	    }
+	    for(int i=0;i<rows;i++)
+	    {
+	        for(int j=0;j<=i;j++)
+	            System.out.print(a[i][j]+" ");
+	        System.out.println();
+	    }
+	}

@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    findPerfectNumbers(1,500);
+	}
+	static void findPerfectNumbers(int s, int e)
+	{
+	    for(int i=s;i<=e;i++)
+	    {
+	        int sum = 0;
+	        for(int j=1; j<=i/2;j++)
+	        {
+	            if(i%j==0)
+	                sum = sum+j;
+	        }
+	        if(sum==i)
+	            System.out.println(i);
+	    }
+	}
+}

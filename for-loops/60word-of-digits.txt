@@ -1,0 +1,18 @@
+public class Main
+{
+	public static void main(String[] args) {
+        wordOfnumber(8309);
+	}
+	static void wordOfnumber(int n){
+	    String a[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
+	    int b[] ={-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},i=0;
+	    for(;n!=0;){
+	        b[i++] = n%10; n/=10;
+	    }
+	    for(int j=b.length-1;j>=0;j--)
+	    {
+	        if(b[j]!=-1)
+	            System.out.print(a[b[j]]+" ");
+	    }
+	}
+}

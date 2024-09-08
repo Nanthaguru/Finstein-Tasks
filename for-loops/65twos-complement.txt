@@ -1,0 +1,43 @@
+public class Main
+{
+	public static void main(String[] args) {
+        twosComplement("01101110");
+	}
+	static void twosComplement(String s)
+	{
+	    int c=1;
+	    String ones = onesComplement(s);
+	    System.out.println("After ones complment: "+ones);
+	    String twos = "";
+	    for(int i=ones.length()-1;i>=0;i--)
+	    {
+	        if(c==1 && ones.charAt(i)=='1')
+	        {
+	            twos = '0'+twos;
+	            c=1;
+	        }
+	        else if((ones.charAt(i)=='1' && c==0)||(ones.charAt(i)=='0' && c==1))
+	        {
+	            twos = '1'+twos; c=0;
+	        }
+	        else if(ones.charAt(i)=='0'&&c==0)
+	        {
+	            twos = '0'+twos; c=0;
+	        }
+	    }
+	    System.out.println("After twos complment: "+twos);
+	}
+	
+	static String onesComplement(String n){
+	    String s = "";
+	    for(int i=0;i<n.length();i++)
+	    {
+	        if(n.charAt(i)=='1')
+	            s = s+'0';
+	        else
+	            s = s+'1';
+	    }
+	    System.out.println(s);
+	    return s;
+	}
+}

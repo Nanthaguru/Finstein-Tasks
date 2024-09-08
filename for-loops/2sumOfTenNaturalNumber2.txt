@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    sumOfTenNaturalNumbers();
+	}
+	static void sumOfTenNaturalNumbers()
+	{
+	    int sum = 0;
+	    System.out.println("The natural number are: ");
+	    for(int i= 1;i<=10;i++)
+	   {   
+	       System.out.print(i+" ");
+	       sum+=i;
+	   }
+	    System.out.println("\n"+ "The sum of first ten natural numbers is: "+sum);
+	}
+}

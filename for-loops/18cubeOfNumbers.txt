@@ -1,0 +1,11 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    printCubeOfNumbers(5);
+	}
+	
+	static void printCubeOfNumbers(int n){
+	    for(int i=1;i<=n;i++)
+	        System.out.println("Number is: "+i+" and the cube of "+i+" is: "+i*i*i);
+	}
+}
