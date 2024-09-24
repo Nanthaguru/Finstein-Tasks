@@ -1,0 +1,12 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        vowelOrConsonant('D');
+    }
+    static void vowelOrConsonant(char c)
+    {
+        if(c=='A' || c=='E' || c=='I' ||c=='O' || c=='U' || c=='a' || c=='e' || c=='i' || c=='o' || c=='u')
+            System.out.println("Vowel");
+        else
+            System.out.println("Consonant");
+    }
+}

@@ -1,0 +1,12 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        divisibleBy5and11(55);
+    }
+    static void leapYear(int year)
+	{
+	    if(year%400==0 || (year%4==0 && year%100!=0))
+	        System.out.println("Leap Year");
+	    else   
+	        System.out.println("Non Leap Year");
+	}
+}

@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+        bloodPressure(152,56);
+	}
+	static void bloodPressure(double systolic, double diastolic){
+	    if(systolic<120 && diastolic<80)
+	        System.out.println("Normal");
+	    else if((systolic>=120 && systolic<=129) && diastolic<80)
+	        System.out.println("Elevated");
+	    else if((systolic>=130 && systolic<=139) || (diastolic>=80 && diastolic<=89))
+	        System.out.println("Stage 1 hypertension");
+	    else if(systolic>=140 || diastolic>=90)
+	        System.out.println("Stage 2 hypertension");
+	}
+}

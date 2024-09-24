@@ -1,0 +1,13 @@
+public class Main
+{
+	public static void main(String[] args) {
+        gpaResult(3);
+	}
+	static void gpaResult(double gpa)
+	{
+	    if(gpa<2.0)
+	        System.out.println("Academic Probation");
+	    else
+	        System.out.println("Good Standing");
+	}
+}

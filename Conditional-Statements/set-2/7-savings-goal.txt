@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+        savingsGoal(34,500000);
+	}
+	
+	static void savingsGoal(int age, double income)
+	{
+	    double middle_income = 250000;
+	    double high_income = 350000; 
+        if(age<18 || age>65)
+	        System.out.println("No retirement savings needed");
+	    else{
+	        if(income<middle_income)
+	            System.out.println("Low retirement savings goal");
+	        else if(income<high_income)
+	            System.out.println("Middle retirement savings goal");
+	        else
+	            System.out.println("High retirement savings goal");
+	    }
+	}
+}

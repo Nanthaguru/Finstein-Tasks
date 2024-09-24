@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+		primeOrNot(97);
+	}
+	static void primeOrNot(int n)
+	{
+	    if(n<2)
+	        System.out.println("Neither prime  nor composite");
+	    else if(n==2 || n==3 || n==5 || n==7 || n==11)
+	        System.out.println("Prime");
+	    else if(n%2==0 || n%3==0 || n%5==0 || n%7==0 || n%11==0)
+	        System.out.println("composite");
+	    else
+	        System.out.println("Prime");
+	}
+}

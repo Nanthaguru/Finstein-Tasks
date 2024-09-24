@@ -1,0 +1,11 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        canFormTriangle(40,60,80);
+    }
+    static void canFormTriangle(int a, int b, int c){
+        if(a+b+c == 180)
+            System.out.println("Valid Triangle");
+        else
+            System.out.println("Invalid Triangle");
+    }
+}

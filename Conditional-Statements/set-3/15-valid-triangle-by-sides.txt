@@ -1,0 +1,11 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        validTriangle(40,40,100);
+    }
+    static void validTriangle(int s1, int s2, int s3){
+        if((s1+s2<s3)||(s2+s3<s1)||(s1+s3<s2))
+            System.out.println("Invalid");
+        else
+            System.out.println("Valid");
+    }
+}

@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+        calci(5,4,"Multiply");
+	}
+	static void calci(int n, int m, String s)
+	{
+	    if(s.equals("Add"))
+	        System.out.println(n+m);
+	    else if(s.equals("Subtract"))
+	        System.out.println(n-m);
+	    else if(s.equals("Multiply"))
+	        System.out.println(n*m);
+	    else if(s.equals("Divide"))
+	        System.out.println(n/m);
+	}
+}

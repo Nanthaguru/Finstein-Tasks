@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+        workLevel(18,3);
+	}
+	static void workLevel(int age, int exp){
+	    if(age<25 && exp<=1)
+	        System.out.println("Entry Level");
+	    else if((age>=25 && age<=40) && (exp>=1 && exp<5))
+	        System.out.println("junior");
+	    else if(age>40 && (exp>=5 && exp<=10))
+	        System.out.println("Senior");
+	    else
+	        System.out.println("Expert");
+	}
+}

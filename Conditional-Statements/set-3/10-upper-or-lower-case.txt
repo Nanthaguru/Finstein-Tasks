@@ -1,0 +1,12 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        upperOrLowerCase('D');
+    }
+    static void upperOrLowerCase(char c)
+    {
+        if(c>='A' && c<='Z')
+            System.out.println("Uppercase");
+        else if(c>='a' && c<='z')
+            System.out.println("Lower case");
+    }
+}

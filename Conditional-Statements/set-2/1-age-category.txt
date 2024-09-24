@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+        frequentNumber(11,4,3);
+	}
+	
+	static void ageCategory(int age){
+	    if(age<18)
+	        System.out.println("Child");
+	    else if(age>=18 && age<=65)
+	        System.out.println("Adult");
+	    else
+	        System.out.println("Senior");
+	}
+}

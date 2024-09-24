@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+		passFail(12);
+	}
+	static void passFail(int percent){
+	    if(percent>=60)
+	        System.out.println("Pass");
+	    else
+	        System.out.println("Fail");
+	}
+}

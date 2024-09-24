@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+        	creditScore(450);
+	}
+	static void creditScore(int creditscore)
+	{
+        if(creditscore<600)
+            System.out.println("Poor Credit");
+        else if(creditscore<700)
+            System.out.println("Fair Credit");
+        else if(creditscore<800)
+            System.out.println("Good Credit");
+        else
+            System.out.println("Excellent Credit");
+	}
+}

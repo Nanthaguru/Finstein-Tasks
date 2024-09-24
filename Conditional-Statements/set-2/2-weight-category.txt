@@ -1,0 +1,16 @@
+public class Main
+{
+	public static void main(String[] args) {
+        weightCategory(30f);
+	}
+	static void weightCategory(float weight){
+	    if(weight<18.5)
+	        System.out.println("Under Weight");
+	    else if(weight<=24.9)
+	        System.out.println("Normal Weight");
+	    else if(weight<=29.9)
+	        System.out.println("Over Weight");
+	    else
+	        System.out.println("Obese");
+	}
+}

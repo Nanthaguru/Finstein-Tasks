@@ -1,0 +1,14 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        alphaDigitSplchar('a');
+    }
+     static void alphaDigitSplchar(char c)
+    {
+        if((c>='A' && c<='Z')||(c>='a' && c<='z'))
+            System.out.println("Alphabet");
+        else if(c>='0' && c<='9')
+            System.out.println("Number");
+        else
+            System.out.println("Special Character");
+    }
+}

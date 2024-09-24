@@ -1,0 +1,19 @@
+public class Main
+{
+	public static void main(String[] args) {
+        taxAllocation(300000);
+	}
+	static void taxAllocation(double income){
+	    double taxable_income = 100000;
+	    double middle_income = 250000;
+	    double high_income = 350000;
+	    if(income<taxable_income)
+	        System.out.println("No Tax");
+	    else if(income>=taxable_income && income<middle_income)
+	        System.out.println("Low tax bracket");
+	    else if(income>=middle_income && income<high_income)
+	        System.out.println("Middle Tax Bracket");
+	    else
+	        System.out.println("High Tax Bracket");
+	}
+}

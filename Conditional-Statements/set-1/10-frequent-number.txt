@@ -1,0 +1,26 @@
+public class Main
+{
+	public static void main(String[] args) {
+        frequentNumber(11,4,3);
+	}
+	static void frequentNumber(int a, int b, int c)
+	{
+	    if(a==b)
+	        System.out.println(a);
+	    else if(b==c)
+	        System.out.println(b);
+	    else if(c==a)
+	        System.out.println(c);
+	    else
+	        smallestOfThree(a,b,c);
+	}
+	static void smallestOfThree(int a, int b, int c)
+	{
+        if(a<b && a<c)
+            System.out.println("a is smallest");
+        else if(b<c && b<a)
+            System.out.println("b is smallest");
+        else 
+            System.out.println("c is smallest");
+	}
+}

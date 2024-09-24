@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+        maximum(32,1);
+	}
+	static void maximum(int a, int b)
+	{
+	    int max;
+        if(a>b)
+            max = a;
+        else
+            max = b;
+        System.out.println(max);
+	}
+}

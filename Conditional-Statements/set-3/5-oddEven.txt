@@ -1,0 +1,14 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        divisibleBy5and11(55);
+    }
+    static void oddEven()
+	{
+	    Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		if((n&1)==1)
+		    System.out.println("Odd");
+        else
+            System.out.println("Even");
+	}
+}

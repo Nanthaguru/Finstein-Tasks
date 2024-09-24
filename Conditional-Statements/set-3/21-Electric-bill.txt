@@ -1,0 +1,29 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        electricBill(450);
+    }
+    static void electricBill(int unit)
+    {
+        double total;
+        if(unit>250)
+        {
+            total = (unit-250)*1.5 + 220;
+            System.out.println("Total: "+(total+(total*0.2)));
+        }
+        else if(unit>150)
+        {
+            total = ((unit-150)*1.2)+100;
+            System.out.println("Total: "+(total+(total*0.2)));
+        }
+        else if(unit>50)
+        {
+            total = ((unit-50)*0.75)+25;
+            System.out.println("Total: "+(total+(total*0.2)));
+        }
+        else
+        {
+            total = unit*0.5;
+            System.out.println("Total: "+(total+(total*0.2)));
+        }
+    }
+}

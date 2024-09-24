@@ -1,0 +1,12 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        divisibleBy5and11(55);
+    }
+    static void divisibleBy5and11(int n)
+    {
+        if((n%5==0) && (n%11==0))
+            System.out.println("Divisible");
+        else
+            System.out.println("Not Divisible");
+    }
+}

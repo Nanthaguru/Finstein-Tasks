@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+  <body>
+    <link rel="stylesheet" href="form.css">
+    <div class="containr">
+      <div class="menu"></div>
+      <div class="right">
+        <div class="add">
+          <button id="adduser">Add User</button>
+        </div>   
+        <div class="usercards">
+          <div class="inner">
+            <div class="main">
+              <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M 4.2382812 2.9882812 A 1.250125 1.250125 0 0 0 3.3671875 5.1347656 L 10.232422 12 L 3.3613281 18.869141 A 1.2512475 1.2512475 0 1 0 5.1308594 20.638672 L 12 13.767578 L 18.865234 20.632812 A 1.250125 1.250125 0 1 0 20.632812 18.865234 L 13.767578 12 L 20.625 5.1425781 A 1.250125 1.250125 0 1 0 18.857422 3.375 L 12 10.232422 L 5.1347656 3.3671875 A 1.250125 1.250125 0 0 0 4.2382812 2.9882812 z"></path>
+                </svg>
+              </div>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputUserName" class="form-label">Username</label>
+                  <input type="text" name="uname" class="form-control" id="exampleInputUserName" aria-describedby="UsernameHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleage" class="form-label">Age</label>
+                  <input type="number" name="age" class="form-control" id="exampleage">
+                </div>
+                
+                <label for="selectgender" class="form-label">Select Gender</label>
+                <div class="mb-3" id="gender">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="1">
+                    <label class="form-check-label" for="exampleRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="exampleRadios3" value="3">
+                    <label class="form-check-label" for="exampleRadios3">
+                      Others
+                    </label>
+                  </div>
+                </div>
+                <label for="">Hobbies</label>
+                <div class="mb-3" id="checkgames">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1" name="cricket">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Cricket
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="2" id="defaultCheck2" name="carrom" >
+                      <label class="form-check-label" for="defaultCheck2">
+                        Carrom
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3" id="defaultCheck3" name="chess">
+                      <label class="form-check-label" for="defaultCheck3">
+                        Chess
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="4" id="defaultCheck4" name="kabadi">
+                      <label class="form-check-label" for="defaultCheck4">
+                        Kabadi
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="5" id="defaultCheck5" name="batmitton">
+                      <label class="form-check-label" for="defaultCheck5">
+                        Batmitton
+                      </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="6" id="defaultCheck6" name="tabletennis">
+                      <label class="form-check-label" for="defaultCheck6">
+                        Table Tennis
+                      </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <table class="table table-dark table-striped " id="userTable">
+          <thead>
+            <tr>
+              <th>SI.No</th>
+              <th>User Id</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Hobbies</th>
+              <th>Action</th>
+              <th>Delete Action</th>
+            </tr>
+          </thead>
+          <tbody>
+             <!-- User data will be populated here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./jquery.serializejson.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

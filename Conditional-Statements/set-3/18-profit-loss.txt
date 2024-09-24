@@ -1,0 +1,11 @@
+class HelloWorld {
+    public static void main(String[] arg){
+        profitLoss(500, 500);
+    }
+    static void profitLoss(double sp, double cp){
+        if(sp>cp)
+            System.out.println("Profit");
+        else
+            System.out.println("Loss");
+    }
+}
